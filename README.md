@@ -1,2 +1,7 @@
-# deepdive
-Repository for delivery, at Devoxx UK 2018, of a 3-hour introduction to developing distributed apps on Ethereum.
+# Blockchain Application development
+
+This is a repository for a three-hour training session held on the 19th March 2018, at the Digital Catapult Centre, Brighton, called [Intro to: Blockchain Application Development for Beginners](https://www.eventbrite.co.uk/e/intro-to-blockchain-application-development-for-beginners-tickets-42564510597). You can read more about the session's intentions in the original [introduction](/docs/introd.md).
+
+The session focuses on the development of a dApp called [Provenator](https://github.com/glowkeeper/Provenator), which was the result of an academic paper that was published recently in a Special Issue of a Mary-Ann Liebert journal, Big Data: [Fake News - a Technological Approach to Proving Provenance Using Blockchains](https://doi.org/10.1089/big.2017.0071).
+
+[Provenator](https://github.com/glowkeeper/Provenator) comprises two parts: a [React](https://reactjs.org/)-based Javascript frontend, and an [Ethereum](https://www.ethereum.org/)-based smart contract blockchain backend. During the session, we will investigate both of those parts, and, in particular, focus on how they are glued together, including instantiating the Ethereum API from within React, interfacing with the smart-contracts, and then sending and receiving asynchronous transactions to those contracts. Once we have done that, we will deploy the constituent parts to their respective distributed infrastructures - for the React front end, that will be the InterPlanetary File System ([IPFS](https://ipfs.io/)), and for the smart contract backend, it will be the [Ropsten test Ethereum network](https://ropsten.etherscan.io/). Finally, we will load the dApp into a browser and see it in action.

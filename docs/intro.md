@@ -1,4 +1,4 @@
-# Abstract
+# Introduction to Blockchain Application Development
 
 The prolific rise in the value of cryptocurrencies, such as [Bitcoin](https://bitcoin.org/en/) and [Ethereum](https://www.ethereum.org/), has led to increasing awareness of their underlying technology - blockchains. Indeed, due to that increased coverage, most are aware that a blockchain is a peer-to-peer distributed public ledger of transactions, or database, which includes public-key cryptography. That means the technology offers properties desirable for trusted collaboration, such as confidentiality, integrity, authenticity and validity. Furthermore, blockchains deliver such secure capabilities without relying upon a central authority. Some variants of blockchain technology also include the concept of smart contracts, which is the ability of blockchains to execute autonomous scripts capable of representing verifiable application logic.
 
