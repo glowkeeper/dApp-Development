@@ -329,6 +329,10 @@ _Source: [Open Clipart](https://openclipart.org/detail/220024/parcel-bw)_
 
 [Provenator](https://github.com/glowkeeper/Provenator) is an open source, free software project on GitHub...
 
+## Presentation
+
+Additionally, this presentation is now **public**, and available on [GitHub](https://github.com/glowkeeper/dApp-Development).
+
 # Thank You
 
 ![](images/adrian.png)
