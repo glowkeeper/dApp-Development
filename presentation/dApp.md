@@ -4,24 +4,16 @@
 
 _Source: [Bitnation](https://tinyurl.com/nktt7tx)_
 
-<div class="notes">
-  Hit 'esc here to give a presentation overview.
-</div>
-
 - - -
 
 ## Overview
 
-> + Your Peers
+> + Your peers
 > + Introduction to [Provenator](https://github.com/glowkeeper/Provenator)
-> + The dApp Development Ecosystem
-> + The Constituent Parts of a dApp
+> + The dApp development ecosystem
+> + The constituent parts of a dApp
 > + Deploying the dApp
-> + Wrapping Up
-
-<div class="notes">
-  Use 'cmd-' on a MAC to make the presentation slightly smaller. That will allow images to display properly. Use the spacebar to navigate, since that will move to the next slide correctly, even if the slides are vertically aligned.
-</div>
+> + Future work (on [Provenator](https://github.com/glowkeeper/Provenator))
 
 # Your Peers
 
@@ -43,7 +35,7 @@ _Source: [Forbes](https://tinyurl.com/y77aju68)_
 ## Me (cont'd)
 
 + MSc Music Technology
-+ Audio programmer in Games
++ Audio Programmer in Games
     - Sony
     - Zoe Mode (here in Brighton)
 + MSc Energy and the Environment
@@ -54,11 +46,23 @@ _Source: [Forbes](https://tinyurl.com/y77aju68)_
 
 ![](images/UoS_logo_black-01.jpg)
 
+## Publications
+
++ [Fake News - a Technological Approach to Proving Provenance Using Blockchains](https://doi.org/10.1089/big.2017.0071)
++ [Towards a post-cash society: An application to convert fiat money into a cryptocurrency](http://dx.doi.org/10.5210/fm.v22i3.7410)
+    - [Micromorpher](https://github.com/glowkeeper/Micromorpher)
++ [Socialism and the Blockchain](http://dx.doi.org/10.3390/fi8040049)
++ [Internet of Things, Blockchain and Shared Economy Applications](http://dx.doi.org/10.1016/j.procs.2016.09.074)
+
+## Current work
+
+**The Value of Bitcoin**:
+
+_Blockchain technology's value lies elsewhere from (Bitcoin's) price. Instead, it lies in the technology's flat, open, P2P topology and its demonstration of the digital commons, which creates socially egalitarian goods and services._
+
 ## Altalix
 
-![](images/sunset-london.jpeg)
-
-_Source: [Altalix](http://www.altalix.com/index.html)_
+![](images/altalixLogo.jpg)
 
 ## You
 
@@ -94,6 +98,7 @@ _Source: [Berkeley Lab](https://www.energystorage.lbl.gov/battery-ecosystem/)_
 
 + [node](https://nodejs.org/en/)
 + [npm](https://www.npmjs.com/)
++ [geth](https://geth.ethereum.org/downloads/)
 + [Ganache](https://github.com/trufflesuite/ganache)
 + [Truffle](https://github.com/trufflesuite/truffle)
 + [http-server](https://www.npmjs.com/package/http-server)
@@ -138,7 +143,7 @@ _Source: [comic.browserling.com](https://comic.browserling.com/15)_
 
 + Blockchain backend smart contracts, built using [Solidity](https://solidity.readthedocs.io/)
 + A Javascript frontend, built using [React](https://reactjs.org/)
-+ The glue that fits the both together - the Ethereum JavaScript API, [web3.js](https://github.com/ethereum/web3.js/).
++ The glue that fits the both together - the Ethereum JavaScript API, [web3.js](https://github.com/ethereum/web3.js/)
 
 ## The Backend Blockchain
 
@@ -147,9 +152,9 @@ _Source: [comic.browserling.com](https://comic.browserling.com/15)_
 ## The Web Interface
 
 + A Javascript frontend, built using [React](https://reactjs.org/)
-+ The Ethereum JavaScript API, [web3.js](https://github.com/ethereum/web3.js/).
-+ The contract address.
-+ The contract ABI.
++ The Ethereum JavaScript API, [web3.js](https://github.com/ethereum/web3.js/)
++ The contract address
++ The contract ABI
 
 ## Sending/Receiving Transactions
 
@@ -177,6 +182,7 @@ Download and install the dependencies (if you have not already done so):
 
 + [node](https://nodejs.org/en/)
 + [npm](https://www.npmjs.com/)
++ ([geth](https://geth.ethereum.org/downloads/))
 + [Ganache](https://github.com/trufflesuite/ganache)
 + [Truffle](https://github.com/trufflesuite/truffle)
 + [http-server](https://www.npmjs.com/package/http-server)
@@ -193,25 +199,21 @@ Run a local Ethereum blockchain via [Ganache](https://github.com/trufflesuite/ga
 
 ## Install (cont'd)
 
-Install the **Provinator** repository's dependencies:
+Install the [Provenator](https://github.com/glowkeeper/Provenator) repository's dependencies:
 
-1. Change to the **Provinator** repository's home directory
-2. Run `npm install`.
-
-<div class="notes">
-  `npm install` should install everything listed in the **Provinator** repository's _package.json_.
-</div>
+1. Change to the [Provenator](https://github.com/glowkeeper/Provenator) repository's home directory
+2. Run `npm install`
 
 ## Contract Deployment
 
 Use [Truffle](https://github.com/trufflesuite/truffle) to publish the contracts to [Ganache](https://github.com/trufflesuite/ganache), your local blockchain instance:
 
-1. Change to the **Provinator** smart contracts directory _blockchain/contracts_
-2. Run `truffle migrate`.
+1. Change to the [Provenator](https://github.com/glowkeeper/Provenator) smart contracts directory _blockchain/contracts_
+2. Run `truffle migrate`
 
 ## Point the Frontend at the Smart contracts
 
-+ Edit the **Provinator** source file _app/utils/contractHandler.jsx_ so that the four static variables `premisObjectContractAddress`, `premisEventContractAddress`, `premisAgentContractAddress` and `premisRightsContractAddress` contain the addresses generated by `truffle migrate`, above. e.g
++ Edit the [Provenator](https://github.com/glowkeeper/Provenator) source file _app/utils/contractHandler.jsx_ so that the four static variables `premisObjectContractAddress`, `premisEventContractAddress`, `premisAgentContractAddress` and `premisRightsContractAddress` contain the addresses generated by `truffle migrate`, above. e.g
 
 ````
 static premisObjectContractAddress = '0xb9bfd8ff77db391a28a45b6c1cb72b0028695219'
@@ -224,17 +226,17 @@ static premisRightsContractAddress = '0xec6a5f11e7865aadc61f27faf8707795c1cda868
 
 Now create the web application:
 
-1. In the **Provinator** repository's home directory, build the [React](https://reactjs.org/) frontend by typing `npm run watch`
+1. In the [Provenator](https://github.com/glowkeeper/Provenator) repository's home directory, build the [React](https://reactjs.org/) frontend by typing `npm run watch`
 2. Copy some needed resources to the build directory by typing `npm run copy`
 
 ## Load the dApp
 
-1. Startup an instance of [http-server](https://www.npmjs.com/package/http-server) by typing `npm run start`
-2. Fire up a [MetaMask](https://metamask.io/) enabled browser
-3. Point MetaMask at your local running instance of the blockchain ([http://localhost:8545](http://localhost:8545)).
-4. Import a wallet from Ganache.
+1. Start an instance of [http-server](https://www.npmjs.com/package/http-server) by typing `npm run start`
+2. Load a [MetaMask](https://metamask.io/) enabled browser
+3. Point [MetaMask](https://metamask.io/) at your local running instance of the blockchain ([http://localhost:8545](http://localhost:8545))
+4. Import a wallet from [Ganache](https://github.com/trufflesuite/ganache)
 5. In the browser, go to the URL [http://localhost:8081](http://localhost:8081)
-6. Create a digital media resource and subsequently, get details about that resource.
+6. Create a digital media resource and subsequently, get details about that resource
 
 ## Deploying Publicly
 
@@ -243,20 +245,20 @@ Now create the web application:
 
 ## Rinkeby
 
-Use the _geth_ client to instantiate the test Ethereum network, [Rinkeby ](https://www.rinkeby.io):
+Use the [geth](https://geth.ethereum.org/downloads/) client to instantiate the test Ethereum network, [Rinkeby ](https://www.rinkeby.io):
 
-1. _geth --testnet_
+1. `geth --testnet`
 
 ## Deploy to Rinkeby
 
 Use [Truffle](https://github.com/trufflesuite/truffle) to publish the contracts to [Rinkeby](https://www.rinkeby.io):
 
-1. Change to the **Provinator** smart contracts directory _blockchain/contracts_
+1. Change to the [Provenator](https://github.com/glowkeeper/Provenator) smart contracts' directory _blockchain/contracts_
 2. Run `truffle migrate`.
 
 ## Point the Frontend at the Smart contracts
 
-+ Edit the **Provinator** source file _app/utils/contractHandler.jsx_ so that the four static variables `premisObjectContractAddress`, `premisEventContractAddress`, `premisAgentContractAddress` and `premisRightsContractAddress` contain the addresses generated by `truffle migrate`, above. e.g
++ Edit the [Provenator](https://github.com/glowkeeper/Provenator) source file _app/utils/contractHandler.jsx_ so that the four static variables `premisObjectContractAddress`, `premisEventContractAddress`, `premisAgentContractAddress` and `premisRightsContractAddress` contain the addresses generated by `truffle migrate`, above. e.g
 
 ````
 static premisObjectContractAddress = '0xb9bfd8ff77db391a28a45b6c1cb72b0028695219'
@@ -269,7 +271,7 @@ static premisRightsContractAddress = '0xec6a5f11e7865aadc61f27faf8707795c1cda868
 
 Now create the web application:
 
-1. In the **Provinator** repository's home directory, build the [React](https://reactjs.org/) frontend by typing `npm run watch`
+1. In the [Provenator](https://github.com/glowkeeper/Provenator) repository's home directory, build the [React](https://reactjs.org/) frontend by typing `npm run watch`
 2. Copy some needed resources to the build directory by typing `npm run copy`
 
 ## Deploy the Frontend to IPFS
@@ -279,10 +281,33 @@ Now create the web application:
 ## Load the dApp
 
 1. Fire up a [MetaMask](https://metamask.io/) enabled browser
-2. Point MetaMask at [Rinkeby](https://www.rinkeby.io)
+2. Point [MetaMask](https://metamask.io/) at [Rinkeby](https://www.rinkeby.io)
 3. Use the [rinkeby faucet](https://www.rinkeby.io/#faucet) to fund your wallet
 4. In the browser, go to the dApp URL [the address here](http://an.ipfs.address)
 5. Create a digital media resource and subsequently, get details about that resource
+
+# Future Work on Provenator
+
+![](images/futureSpacestation.png)
+
+_Source: [Open Clipart](https://tinyurl.com/yca6w2pw)_
+
+- - -
+
+## Research Project
+
+Looking at acquiring funding for a research project based on the ideas presented in [Fake News - a Technological Approach to Proving Provenance Using Blockchains](https://doi.org/10.1089/big.2017.0071) and [Provenator](https://github.com/glowkeeper/Provenator).
+
+## Some Other Ideas
+
++ UI improvements
++ Search, via perceptual hashes?
++ [Dat](https://github.com/datproject) rather than [IPFS](https://ipfs.io/)?
++ A mobile app'
+
+## Your Input
+
+How do you think [Provenator](https://github.com/glowkeeper/Provenator) can be improved?
 
 # Wrapping Up
 
@@ -294,10 +319,11 @@ _Source: [Open Clipart](https://openclipart.org/detail/220024/parcel-bw)_
 
 ## Session overview
 
-> + Introduced [Provenator](https://github.com/glowkeeper/Provenator)
-> + The dApp Development Ecosystem
-> + The Constituent Parts of a dApp
+> + [Provenator](https://github.com/glowkeeper/Provenator)
+> + The dApp development ecosystem
+> + The constituent parts of a dApp
 > + Deploying the dApp
+> + Future work (on [Provenator](https://github.com/glowkeeper/Provenator))
 
 ## Get Involved!
 
