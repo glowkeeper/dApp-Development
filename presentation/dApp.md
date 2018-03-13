@@ -82,13 +82,27 @@ _Source: [Open Clipart](https://tinyurl.com/yctu3ssl)_
 
 [Provenator](https://github.com/glowkeeper/Provenator) is the result of an academic paper that was published recently in a Special Issue of a Mary-Ann Liebert journal, Big Data: [Fake News - a Technological Approach to Proving Provenance Using Blockchains](https://doi.org/10.1089/big.2017.0071).
 
+## Blockchains
+
++ Blockchains are, essentially, an immutable database technology with inbuilt trust mechanisms
++ That database is comprised of a ledger, in the form of a chain of transactions
++ Included are cryptographic algorithms and digital signatures that allow secure electronic collaboration, without requiring any centralised authority
++ In other words, no single entity is in control
++ Some blockchains, such as [Ethereum](https://www.ethereum.org/), have the ability to execute smart contracts, or application code. Think of them as stored procedures with row-level security
+
 ## PREMIS
 
-PREMIS is a provenance schema which helps identify a resource. [Provenator](https://github.com/glowkeeper/Provenator) uses PREMIS metadata definitions to record the ownership of digital media items on the blockchain, using smart contracts.
+PREMIS is a provenance schema which helps identify a resource. [Provenator](https://github.com/glowkeeper/Provenator) uses PREMIS metadata definitions to record the ownership of digital media items on the ([Ethereum](https://www.ethereum.org/)) blockchain, using ([Solidity](https://solidity.readthedocs.io/)) smart contracts.
 
 ![](images/premis3.png)
 
 _Source: [The PREMIS Data Dictionary Version 3.0](https://www.loc.gov/standards/premis/v3/premis-3-0-final.pdf)_
+
+## REACT
+
+![](images/reactIcon.png)
+
+_Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:React-icon.svg)_
 
 ## The Live dApp
 
