@@ -1,5 +1,7 @@
 ﻿# An Introduction to Blockchain Distributed Application (dApp) Development
 
+by Steven Huckle - s.huckle@sussex.ac.uk
+
 ![](images/decentralisedConsensus.png)
 
 _Source: [Bitnation](https://tinyurl.com/nktt7tx)_
@@ -356,6 +358,8 @@ _Source: [Open Clipart](https://openclipart.org/detail/220024/parcel-bw)_
 Additionally, this presentation is now **public**, and available on [GitHub](https://github.com/glowkeeper/dApp-Development).
 
 # Thank You
+
+Steven Huckle - s.huckle@sussex.ac.uk
 
 ![](images/adrian.png)
 
