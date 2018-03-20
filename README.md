@@ -1,4 +1,4 @@
-# Blockchain Application development
+# Blockchain Application Development
 
 This is a repository for a three-hour training session held on the 19th March 2018, at the Digital Catapult Centre, Brighton, called [Intro to: Blockchain Application Development for Beginners](https://www.eventbrite.co.uk/e/intro-to-blockchain-application-development-for-beginners-tickets-42564510597). You can read more about the session's intentions in the original [introduction](/docs/intro.md). You can also find the [ session presentation](/presentation/dApp.md).
 
